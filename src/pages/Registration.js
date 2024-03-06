@@ -1,0 +1,53 @@
+export default function Registration() {
+  return (
+    <div>
+      <h2>Register Here To Listen Songs</h2>
+      <form action="register" method="post">
+        <label> UserName:</label>
+        <br />
+        <br />
+        <input type="text" name="username" class="form" required />
+        <br />
+        <br />
+        <label>Email:</label>
+        <br />
+        <br />
+        <input type="email" name="email" class="form" required />
+        <br />
+        <br />
+        <label>Password:</label>
+        <br />
+        <br />
+        <input type="password" name="password" class="form" required />
+        <br />
+        <br />
+        <label>Gender:</label>
+        <br />
+        <br />
+        Male
+        <input type="radio" name="gender" value="Male" id="male" />
+        Female
+        <input type="radio" name="gender" value="Female" id="female" />
+        Others
+        <input type="radio" name="gender" value="Others" />
+        <br />
+        <br />
+        <label>Role:</label>
+        <br />
+        <br />
+        Admin
+        <input type="radio" name="role" value="Admin" id="role" />
+        Customer
+        <input type="radio" name="role" value="Customer" />
+        <br />
+        <br />
+        <label>Address:</label>
+        <br />
+        <br />
+        <textarea name="address" class="form"></textarea> <br />
+        <br />
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </div>
+  );
+}
